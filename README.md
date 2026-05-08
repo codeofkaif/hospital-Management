@@ -218,7 +218,7 @@ Learned transaction management and modifying queries.
 @Transactional
 @Modifying
 @Query("UPDATE Patient p SET p.name = :name WHERE p.id = :id")
-void updatePatientName(Long id, String name);
+void updatePatientName(@Param("id") Long id,@Param("name") String name);
 ```
 
 ---
