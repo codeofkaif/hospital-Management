@@ -184,7 +184,7 @@ Learned how to create custom JPQL queries using `@Query`.
 
 ```java
 @Query("SELECT p FROM Patient p WHERE p.bloodGroup = :bloodGroup")
-List<Patient> findByBloodGroup(BloodGroupType bloodGroup);
+List<Patient> findByBloodGroup(@Param("bloodGroup") BloodGroupType bloodGroup);
 ```
 
 ---
