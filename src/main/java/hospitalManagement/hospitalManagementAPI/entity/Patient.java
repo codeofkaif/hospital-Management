@@ -9,6 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @ToString
@@ -45,6 +46,12 @@ public class Patient {
     @Enumerated(EnumType.STRING)
     @Column(name = "blood_group")
     private BloodGroupType bloodGroup;
+
+    @OneToOne
+    @JoinColumn(name = "Patient_Incurence_id")
+    private Incurence incurence;
+    @OneToMany(mappedBy = "patient")
+    private List<Appointment> appointments;
 
 
 }
