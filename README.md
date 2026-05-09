@@ -325,6 +325,15 @@ spring.jpa.hibernate.ddl-auto=validate
 Learned how to fetch large datasets efficiently using pagination.
 
 ---
+# 11. Entity Relationship 
+- OneToMany
+- ManyToOne
+- ManyToMany
+     - @OneToMany
+     ```java
+       @OneToMany(MappedBy = "Patient")
+     ```
+---
 
 ## Example
 
