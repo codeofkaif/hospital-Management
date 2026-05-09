@@ -324,6 +324,23 @@ spring.jpa.hibernate.ddl-auto=validate
 
 Learned how to fetch large datasets efficiently using pagination.
 
+## Example
+
+```java
+Page<Patient> findAll(Pageable pageable);
+```
+
+---
+## Concepts Learned
+
+- Pageable Interface
+- Page Request
+- Sorting Data
+- Performance Optimization
+- Large Dataset Handling
+
+---
+
 ---
 # 11. Entity Relationship 
 - OneToMany
@@ -335,23 +352,9 @@ Learned how to fetch large datasets efficiently using pagination.
      ```
 ---
 
-## Example
 
-```java
-Page<Patient> findAll(Pageable pageable);
-```
 
----
 
-## Concepts Learned
-
-- Pageable Interface
-- Page Request
-- Sorting Data
-- Performance Optimization
-- Large Dataset Handling
-
----
 
 # 🏥 Real World Problem Solved
 
